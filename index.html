@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>ÖBL-IRS status report, Vienna 25.11.2021</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/academy.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+	<div id="header">ÖBL-IRS status report
+(matthias.schloegl@oeaw.ac.at)<br/>13.12.2021</div>
+		<div class="reveal">
+			<div class="slides">
+        <section data-background-video="images/irs_v3.mp4" data-background-video-loop data-background-video-muted data-background-opacity="0.7">
+              <h2>IRS (Integriertes Redaktionssystem)</h2>
+
+              <h4>https://sennierer.github.io/irs_sab_11_21/</h4>
+              <span style="font-size:
+0.5em">use space to run through the slides</span>
+			<aside class="notes">
+				* Presentation live on github<br/>
+				* Leaddeveloper Arnold Graf left ACDH-CH, thus delay. But Philipp Röggla will continue dev starting 2022<br/>
+				* Meant to replace Gideon<br/>
+				* All in one online system for editing articles: from finding the candidate, to setting up the editing workflow, to writing and editing the actual biography<br/>
+				* several advantages: single source of truth, automatically backed up via servers, advantages of the linked open data cloud, built on open source components
+			</aside>
+        </section>
+      <section data-markdown="sections/irs_structure.md"
+       data-separator="^\r?\n---\r?\n$"
+       data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+       data-separator-notes="^Note:">
+     </section>
+      <section data-markdown="sections/irs_dev_workflow_bullets.md"
+       data-separator="^\r?\n---\r?\n$"
+       data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+       data-separator-notes="^Note:">
+     </section>
+      <section data-markdown="sections/irs_dev_workflow.md"
+       data-separator="^\r?\n---\r?\n$"
+       data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+       data-separator-notes="^Note:">
+     </section>
+	 <section data-background-iframe="http://127.0.0.1:8080" data-background-interactive data-preload >
+    </section> 
+      <section data-markdown="sections/upcoming_features_irs.md"
+       data-separator="^\r?\n---\r?\n$"
+       data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+       data-separator-notes="^Note:">
+     </section>
+     
+	 <section data-markdown>
+         <script type="text/template">
+           # Thank You!
+
+           matthias.schloegl@oeaw.ac.at
+        </script>
+    </section>
+	</div>
+	</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/animate/plugin.js"></script>
+    <script src="plugin/animate/svg.min.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+        width: 1400,
+        height: 900,
+
+        margin: 0.04,
+
+        minScale: 0.2,
+        maxScale: 2.0,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAnimate ],
+        animate: {
+		    autoplay: true
+	    }
+			});
+		</script>
+	</body>
+</html>
